@@ -1,10 +1,10 @@
 namespace Unit04.Game.Casting
 {
     
-    public class Rock : Actor
+    public class rock : Actor
     {
         
-        public Rock()
+        public rock()
         {
         }
 
