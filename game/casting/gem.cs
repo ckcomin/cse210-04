@@ -6,8 +6,9 @@ namespace Unit04.Game.Casting
 
         }
 
+        //if gems posiitoin is greater than {coordinates of the bottom of the screen}
+        //then have the gem go down every gameloop (tick)
 
-        
 
 
 
