@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 namespace Unit04.Game.Casting
 {
-    public class gem : actor {
-        public gem() {
+    public class Gem : Actor {
+        public Gem() {
 
         }
 
