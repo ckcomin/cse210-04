@@ -2,6 +2,8 @@ using System.Collections.Generic;
 namespace Unit04.Game.Casting
 {
     public class Gem : Actor {
+
+        private int points = 1;
         public Gem() {
 
         }
@@ -13,7 +15,15 @@ namespace Unit04.Game.Casting
 
         // set the point value
 
+        public int GetScore()
+        {
+            return score;
+        }
 
+        public void SetScore(int score,int points)
+        {
+            score += points;
+        }
 
 
 
