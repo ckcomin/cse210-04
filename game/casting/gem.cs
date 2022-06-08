@@ -12,6 +12,7 @@ namespace Unit04.Game.Casting
         //then have the gem go down every gameloop (tick)
 
         // set the point value
+        // update the score if touched
 
 
 
