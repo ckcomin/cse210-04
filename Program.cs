@@ -22,7 +22,7 @@ namespace Unit04
         private static int COLS = 60;
         private static int ROWS = 40;
         private static string CAPTION = "Greed";
-        private static string DATA_PATH = "Data/messages.txt";
+        // private static string DATA_PATH = "Data/messages.txt";
         private static Color WHITE = new Color(255, 255, 255);
         private static int DEFAULT_ARTIFACTS = 40;
 
@@ -36,7 +36,7 @@ namespace Unit04
         //     // create the cast
         //     Cast cast = new Cast();
 
-        //     // create the banner
+        //     // create the banner (This can be the score)
         //     Actor banner = new Actor();
         //     banner.SetText("");
         //     banner.SetFontSize(FONT_SIZE);
@@ -44,7 +44,7 @@ namespace Unit04
         //     banner.SetPosition(new Point(CELL_SIZE, 0));
         //     cast.AddActor("banner", banner);
 
-        //     // create the player
+        //     // create the player (Keep this)
         //     Actor player = new Actor();
         //     player.SetText("#");
         //     player.SetFontSize(FONT_SIZE);
@@ -53,7 +53,7 @@ namespace Unit04
         //     cast.AddActor("player", player);
 
         //     // create the artifacts
-        //     Random random = new Random();
+        //     Random random = new Random(); (We need this but for gems and rocks.)
         //     for (int i = 0; i < DEFAULT_ARTIFACTS; i++)
         //     {
         //         string text = ((char)random.Next(33, 126)).ToString();
