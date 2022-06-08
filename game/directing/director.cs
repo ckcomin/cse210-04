@@ -86,10 +86,10 @@ namespace Unit04.Game.Directing
         /// <param name="cast">The given cast.</param>
         public void DoOutputs(Cast cast)
         {
-            // List<Actor> actors = cast.GetAllActors();
-            // videoService.ClearBuffer();
-            // videoService.DrawActors(actors);
-            // videoService.FlushBuffer();
+            List<Actor> actors = cast.GetAllActors();
+            videoService.ClearBuffer();
+            videoService.DrawActors(actors);
+            videoService.FlushBuffer();
         }
 
     }
