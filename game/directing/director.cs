@@ -69,13 +69,14 @@ namespace Unit04.Game.Directing
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
 
+            // update the score
             foreach (Actor actor in artifacts)
             {
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
-                    Artifact artifact = (Artifact) actor;
-                    string message = artifact.GetMessage();
-                    banner.SetText(message);
+                    // Artifact artifact = (Artifact) actor;
+                    // string message = artifact.GetMessage();
+                    // banner.SetText(message);
                 }
             } 
         }
