@@ -34,23 +34,23 @@ namespace Unit04
         static void Main(string[] args)
         {
         //     // create the cast
-        //     Cast cast = new Cast();
+            Cast cast = new Cast();
 
         //     // create the banner (This can be the score)
-        //     Actor banner = new Actor();
-        //     banner.SetText("");
-        //     banner.SetFontSize(FONT_SIZE);
-        //     banner.SetColor(WHITE);
-        //     banner.SetPosition(new Point(CELL_SIZE, 0));
-        //     cast.AddActor("banner", banner);
+            Actor banner = new Actor();
+            banner.SetText("");
+            banner.SetFontSize(FONT_SIZE);
+            banner.SetColor(WHITE);
+            banner.SetPosition(new Point(CELL_SIZE, 0));
+            cast.AddActor("banner", banner);
 
         //     // create the player (Keep this)
-        //     Actor player = new Actor();
-        //     player.SetText("#");
-        //     player.SetFontSize(FONT_SIZE);
-        //     player.SetColor(WHITE);
-        //     player.SetPosition(new Point(MAX_X / 2, MAX_Y / 2));
-        //     cast.AddActor("player", player);
+            Actor player = new Actor();
+            player.SetText("#");
+            player.SetFontSize(FONT_SIZE);
+            player.SetColor(WHITE);
+            player.SetPosition(new Point(MAX_X / 2, MAX_Y / 2));
+            cast.AddActor("player", player);
 
         //     // create the artifacts
         //     Random random = new Random(); (We need this but for gems and rocks.)
