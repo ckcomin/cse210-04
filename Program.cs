@@ -74,8 +74,7 @@ namespace Unit04
                  gem.SetFontSize(FONT_SIZE);
                  gem.SetColor(color);
                  //artifact.SetPosition(position);
-                 artifact.SetMessage(message);
-                 cast.AddActor("artifacts", artifact);
+                 cast.AddActor("gems", gem);
              }
 
         //     // start the game
