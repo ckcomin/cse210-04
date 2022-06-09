@@ -81,6 +81,18 @@ namespace Unit04.Game.Directing
                     //This is where we will be updating score
                     //and deleting gem?
                 }
+            }
+
+            foreach (Actor actor in rocks)
+            {
+                if (player.GetPosition().Equals(actor.GetPosition()))
+                {
+                        // Artifact artifact = (Artifact) actor;
+                        // string message = artifact.GetMessage();
+                        // banner.SetText(message);
+                    //This is where we will be updating score
+                    //and deleting rock?
+                }
             } 
         }
 
