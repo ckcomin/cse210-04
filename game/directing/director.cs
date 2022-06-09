@@ -62,7 +62,8 @@ namespace Unit04.Game.Directing
         {
             Actor banner = cast.GetFirstActor("banner");
             Actor player = cast.GetFirstActor("player");
-            List<Actor> artifacts = cast.GetActors("artifacts");
+            List<Actor> gems = cast.GetActors("gems");
+            List<Actor> gems = cast.GetActors("rocks");
 
             banner.SetText("");
             int maxX = videoService.GetWidth();
@@ -70,13 +71,15 @@ namespace Unit04.Game.Directing
             player.MoveNext(maxX, maxY);
 
             // update the score
-            foreach (Actor actor in artifacts)
+            foreach (Actor actor in gems)
             {
                 if (player.GetPosition().Equals(actor.GetPosition()))
                 {
-                    // Artifact artifact = (Artifact) actor;
-                    // string message = artifact.GetMessage();
-                    // banner.SetText(message);
+                        // Artifact artifact = (Artifact) actor;
+                        // string message = artifact.GetMessage();
+                        // banner.SetText(message);
+                    //This is where we will be updating score
+                    //and deleting gem?
                 }
             } 
         }
