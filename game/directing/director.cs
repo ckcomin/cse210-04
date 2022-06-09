@@ -63,7 +63,7 @@ namespace Unit04.Game.Directing
             Actor banner = cast.GetFirstActor("banner");
             Actor player = cast.GetFirstActor("player");
             List<Actor> gems = cast.GetActors("gems");
-            List<Actor> gems = cast.GetActors("rocks");
+            List<Actor> rocks = cast.GetActors("rocks");
 
             banner.SetText("");
             int maxX = videoService.GetWidth();
