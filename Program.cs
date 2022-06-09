@@ -25,6 +25,7 @@ namespace Unit04
         // private static string DATA_PATH = "Data/messages.txt";
         private static Color WHITE = new Color(255, 255, 255);
         private static int DEFAULT_ARTIFACTS = 40;
+        private int TOTAL_SCORE = 0;
 
 
         /// <summary>
@@ -46,7 +47,7 @@ namespace Unit04
 
         //     // create the player (Keep this)
             Actor player = new Actor();
-            player.SetText("#");
+            player.SetText("#"); 
             player.SetFontSize(FONT_SIZE);
             player.SetColor(WHITE);
             player.SetPosition(new Point(MAX_X / 2, MAX_Y / 2));
