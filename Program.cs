@@ -77,6 +77,28 @@ namespace Unit04
                  cast.AddActor("gems", gem);
              }
 
+             for (int i = 0; i < DEFAULT_ROCKS; i++)
+             {
+                 string text = "0";
+
+                 //int x = random.Next(1, COLS);
+                //int y = random.Next(1, ROWS);
+                 //Point position = new Point(x, y);
+                 //position = position.Scale(CELL_SIZE);
+
+                 int r = random.Next(0, 256);
+                 int g = random.Next(0, 256);
+                 int b = random.Next(0, 256);
+                 Color color = new Color(r, g, b);
+
+                 rock rock = new rock();
+                 rock.SetText(text);
+                 rock.SetFontSize(FONT_SIZE);
+                 rock.SetColor(color);
+                 //artifact.SetPosition(position);
+                 cast.AddActor("rocks", rock);
+             }
+
         //     // start the game
         //     KeyboardService keyboardService = new KeyboardService(CELL_SIZE);
         //     VideoService videoService 
