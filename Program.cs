@@ -24,7 +24,10 @@ namespace Unit04
         private static string CAPTION = "Greed";
         // private static string DATA_PATH = "Data/messages.txt";
         private static Color WHITE = new Color(255, 255, 255);
-        private static int DEFAULT_ARTIFACTS = 40;
+        //private static int DEFAULT_ARTIFACTS = 40;
+        private static int DEFAULT_GEMS = 40;
+        private static int DEFAULT_ROCKS = 40;
+
         private int TOTAL_SCORE = 0;
 
 
