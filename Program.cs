@@ -72,7 +72,7 @@ namespace Unit04
                  int b = random.Next(0, 256);
                  Color color = new Color(r, g, b);
 
-                 gem gem = new gem();
+                 Gem gem = new Gem();
                  gem.SetText(text);
                  gem.SetFontSize(FONT_SIZE);
                  gem.SetColor(color);
@@ -94,7 +94,7 @@ namespace Unit04
                  int b = random.Next(0, 256);
                  Color color = new Color(r, g, b);
 
-                 rock rock = new rock();
+                 Rock rock = new Rock();
                  rock.SetText(text);
                  rock.SetFontSize(FONT_SIZE);
                  rock.SetColor(color);

@@ -17,6 +17,7 @@ namespace Unit04.Game.Casting
         private Color color = new Color(255, 255, 255); // white
         private Point position = new Point(0, 0);
         private Point velocity = new Point(0, 0);
+        private int score = 0;
 
         /// <summary>
         /// Constructs a new instance of Actor.
@@ -68,6 +69,11 @@ namespace Unit04.Game.Casting
         public Point GetVelocity()
         {
             return velocity;
+        }
+
+        public int GetScore()
+        {
+            return score;
         }
 
         /// <summary>
@@ -156,5 +162,13 @@ namespace Unit04.Game.Casting
             this.velocity = velocity;
         }
 
+        public void SetScore(int score)
+        {
+            if (velocity == null)
+            {
+                throw new ArgumentException("score can't be null");
+            }
+            this.score = score;
+        }
     }
 }

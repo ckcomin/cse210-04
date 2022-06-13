@@ -11,10 +11,10 @@ namespace Unit04.Game.Casting
         }
             
 
-        public int GetScore()
-        {
-            return score;
-        }
+        ///public int GetScore()
+        ///{
+           /// return score;
+        ///}
 
         public void SetScore(int score,int points)
         {

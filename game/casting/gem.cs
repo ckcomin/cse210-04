@@ -15,10 +15,10 @@ namespace Unit04.Game.Casting
 
         // set the point value
 
-        public int GetScore()
-        {
-            return score;
-        }
+        ///public int GetScore()
+        ///{
+           /// return score;
+        ///}
 
         public void SetScore(int score,int points)
         {
