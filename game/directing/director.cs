@@ -58,6 +58,7 @@ namespace Unit04.Game.Directing
         /// Updates the robot's position and resolves any collisions with artifacts.
         /// </summary>
         /// <param name="cast">The given cast.</param>
+
         private void DoUpdates(Cast cast)
         {
             Actor banner = cast.GetFirstActor("banner");
@@ -69,6 +70,31 @@ namespace Unit04.Game.Directing
             int maxX = videoService.GetWidth();
             int maxY = videoService.GetHeight();
             player.MoveNext(maxX, maxY);
+
+            Random random = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                string text = ((char)random.Next(33, 34)).ToString();
+                string message = score;
+
+                int x = random.Next(1, Program.COLS);
+                int y = random.Next(1, Program.ROWS);
+                Point position = new Point(x, y);
+                position = position.Scale(Program.CELL_SIZE);
+
+                int r = random.Next(0, 256);
+                int g = random.Next(0, 256);
+                int b = random.Next(0, 256);
+                Color color = new Color(r, g, b);
+
+                Rock rock = new Rock();
+                rock.SetText(text);
+                rock.SetFontSize(Program.FONT_SIZE);
+                rock.SetColor(color);
+                rock.SetPosition(position);
+                rock.SetMessage(message);
+                cast.AddActor("artifacts", rock);
+            }
 
             // update the score
             foreach (Actor actor in gems)
